@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+        <form action="mailto:yuehuangmatias@gmail.com?subject=FORMULARIO" target="_blank" method="post" enctype="text/plain">
+            <div>
+                <label for="nameid">Nombre:</label>
+                <input type="text" name="name" id="nameid" placeholder="introdusca su nombre" required maxlength="10" minlength="2">
+            </div>
+
+            <div>
+                <label for="lastnameid">Apellido:</label>
+                <input type="text" name="lastname" id="lastnameid" value="apellido asignado"><!--value es para asignar un valor por defecto-->
+            </div>
+            <div>
+                <label for="edadid">Edad:</label>
+                <input type="number" name="edad" id="edadid" required><!--required es para que no se puede enviar sin completar-->
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+    </form>
+</body>
+</html>
