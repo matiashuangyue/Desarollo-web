@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport"
+        content="Width=device-width, initial-scae=1.0">
+        <title>HTML-DAW</title>
+    </head>
+    <body>
+        <form action="mailto:yuehuangmatias@gmail.com?subject=FORMULARIO" target="_blank" method="post" enctype="text/plain">
+            <!--action es para donde se va a enviar la informacion, target es para abrir en otra pagina,
+             method es para como se va a enviar la informacion,
+              get es para la informacion enviada puede ser visible manda las variable para ser utilizable pero no lo usan, como un quieridparan(?)(muestra en las url),para obtencion de datos 
+               y post es para que sea oculto, para creacion de datos   -->
+            <div>
+                <label for="nameid">Nombre:</label>
+                <input type="text" name="name" id="nameid" placeholder="introdusca su nombre" required maxlength="10" minlength="2">
+            </div>
+
+            <div>
+                <label for="lastnameid">Apellido:</label>
+                <input type="text" name="lastname" id="lastnameid" value="apellido asignado"><!--value es para asignar un valor por defecto-->
+            </div>
+            <div>
+                <label for="edadid">Edad:</label>
+                <input type="number" name="edad" id="edadid" required><!--required es para que no se puede enviar sin completar-->
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="comentarioid">Comentario:</label>
+                <textarea name="comentario" id="comentarioid" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="dateid">Fecha de nacimiento:</label>
+                <input type="date" name="date" id="dateid">
+            </div>
+            <div>
+                <label for ="studentid">alumno:</label>
+                <input type="checkbox" name="student" id="studentid">
+            </div>
+            <div>
+                <label for="morningid">morning:</label>
+                <input type="radio" name="morning" id="morningid">
+                <label for="afternoonid">afternoon:</label>
+                <input type="radio" name="afternoon" id="afternoonid">
+                <label for="nightid">night:</label>
+                <input type="radio" name="night" id="nightid">
+            </div>
+            <div>
+                <label for="">dias de la semana</label>
+                <select name="week" id="weekid"> <!--multiline se puede agregar para seleccionar vario opcion-->
+                    <optgroup label="dias laborales">
+                        <option value="lunes">lunes</option>
+                        <option value="martes">martes</option>
+                        <option value="miercoles"selected>miercoles</option>
+                        <option value="jueves">jueves</option>
+                        <option value="viernes">viernes</option>
+                    </optgroup>
+                    <optgroup label="fin de semana">
+                        <option value="sabado">sabado</option>
+                        <option value="domingo">domingo</option>
+                    </optgroup><!--se utiliza para dividir -->
+                </select>
+            </div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </body>
+</html>
