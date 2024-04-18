@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+</head>
+<body>
+    <a href="../Paginas/PaginaControl.html"> 
+        <input type="button" value="back">
+    </a>
+        <form action="https://google.com" target="_blank" method="post" enctype="text/plain" >
+            <div>
+                <label for="nameid">Nombre:</label>
+                <input type="text" name="name" id="nameid" placeholder="introduzca su nombre" required maxlength="20" minlength="2">
+            </div>
+
+            <div>
+                <label for="lastnameid">Apellido:</label>
+                <input type="text" name="lastname" id='lastnameid' placeholder="introduzca su apellido" required maxlength="20" minlength="2">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="xxxx@email.com" required> 
+            </div>
+            <div>
+                <label for="sexoid" >Sexo:</label>
+                <input type="radio" name="sexo" id="sexoid" value="Masculino" checked>Masculino
+                <input type="radio" name="sexo" id="sexoid" value="Femenino">Femenino
+            <div>
+                <label for="comentarioid">Comentario:</label>
+                <textarea name="comentario" id="comentarioid" cols="20" rows="5" ></textarea>
+            </div>
+            <div>
+                <label for="weekid"> Dia libre:</label>
+                <select name="week" id="weekid" multiple required>
+                    <optgroup label="dias laborales">
+                        <option value="lunes">lunes</option>
+                        <option value="martes">martes</option>
+                        <option value="miercoles">miercoles</option>
+                        <option value="jueves">jueves</option>
+                        <option value="viernes">viernes</option>
+                    </optgroup>
+                    <optgroup label="fin de semana">
+                        <option value="sabado"selected>sabado</option>
+                        <option value="domingo"selected>domingo</option>
+                    </optgroup>
+                </select>
+            </div>
+            <input	type="submit" value="enviar">
+            <input type="reset" value="restablecer">
+            <a href="../index.html">
+                <input type="button" value="cancelar">
+            </a>
+    </form>
+</body>
+</html>
