@@ -66,25 +66,21 @@ a{
 }
  
 
-.menu{
-    margin-right: auto;
+section {
     
-}
-
-
-
-
-
-
-.Link-Especial{
-    text-decoration: none;
-    color: black;
-    font-family:var(--font-family);
+    margin: 90px 0 0 0;
+    padding: 20px;
+    font-family: var(--font-family);
    
-
-    
-
 }
+
+
+
+*{
+    font-size: 20px;
+}
+
+
 
 p{
     color: black;
