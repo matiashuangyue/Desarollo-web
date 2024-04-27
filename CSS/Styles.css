@@ -22,7 +22,7 @@
 main {
     display: block;
     margin: 90px 0 0 0;
-    
+    max-width: 3500px; 
 }
 
 
@@ -137,7 +137,37 @@ h1{
     font-size: 40px;
 }
 
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px;
+    position: relative;
+}
 
+h3{
+    color: black;
+    font-size: 40px;
+    font-family:century gothic;
+    text-align: left;
+    margin-left: 80px;
+}
+
+ 
+ footer{
+    background-color: #7e7a7a;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    height: 500px;
+    width: 100%;
+    font-family: var(--font-family);
+ }
 
 p{
     color: black;
