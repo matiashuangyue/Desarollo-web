@@ -4,50 +4,72 @@
         <meta charset="UTF-8">
         <meta name="Viewport"
         content="Width=device-width, initial-scae=1.0">
+        <link rel="stylesheet" href="../CSS/Normalize.css">
+        <link rel="stylesheet" href="../CSS/Styles.css">
         <title>HTML-DAW</title>
     </head>
     <body>
-
-        <header>
-            <a href="../Paginas/PaginaControl.html">  
-                <img src="../Imagenes/back.jpg" alt="toca aca para volver"width="100">          
-            </a>
-            <br>
-
-            <img src="../Imagenes/logo_infobae_naranja.svg" alt="aca hay un logo de infobae" width="300">
-            <br>
-            
-           <h1><strong>NOTICIA RIKAAAA</strong></h1>
-           
-            <nav></nav>
-        </header>
+       
+            <header class="hr"> 
+                <nav class="NavBar">
+                    <ul>
+                        <li class="menu"><a href="#"> <img src="../Imagenes/menu.png" alt="toca aca para volver"width="100"> </a></li>
+                        <li class="date" id="current-date"><script>
+                            // Get the current date
+                            var currentDate = new Date();
+                            
+                            // Format the date as YYYY-MM-DD
+                            var formattedDate = currentDate.toISOString().split('T')[0];
+                            
+                            // Set the formatted date as the content of the element with id "current-date"
+                            document.getElementById("current-date").textContent = formattedDate;
+                        </script></li>
+                        <li> <a href="#">Colombia</a></li>
+                        <li> <a href="#">España</a></li>
+                        <li> <a href="#">Mexíco</a></li>
+                        <li> <a href="#">Perú</a></li>
+                        <li> <a href="#">Mundo</a></li>
+                        <li> <a href="#">Últimas Noticias</a></li>
+                        <li> <a href="#">Política</a></li>
+                        <li class="btnmenu"> <a href="#"><button>Registrarme</button></a></li>
+                        <li class="btnmenu"> <a href="#"><button>Iniciar Sesión</button></a></li>
+                        <!--<li class="logo"><a href="https://www.infobae.com/"><img src="../Imagenes/logo_infobae_naranja.svg" alt="aca hay un logo de infobae" width="300"></a></li>
+                        <li class="user"><a href="#"><img src="../Imagenes/user.png" width=" 100" ></a></li>-->
+                    </ul>
+                </nav>
+            </header>
         
-        <main>
-           <h1>Apple alerta sobre ataques espía en iPhones de 92 países</h1>
-           
-            <section>
-                
+        <main class="main">
+            <div class="logo">
+                <a href="https://www.infobae.com/"><img src="../Imagenes/logo_infobae_naranja.svg" alt="aca hay un logo de infobae" width="300"></a>
+            </div>
+            <div class="nav-container">
+                <a class="nav-item" href="https://www.infobae.com/ultimas-noticias/">Últimas Noticias</a>
+                <a class="nav-item" href="https://www.infobae.com/politica/">Política</a>
+                <a class="nav-item" href="https://www.infobae.com/economia/">Economía</a>
+                <a class="nav-item" href="https://www.infobae.com/economia/divisas/dolar-hoy/">Dólar hoy</a>
+                <a class="nav-item" href="https://www.infobae.com/deportes/">Deportes</a>
+                <a class="nav-item" href="https://www.infobae.com/sociedad/">Sociedad</a>
+                <a class="nav-item" href="https://www.infobae.com/sociedad/policiales/">Policiales</a>
+                <a class="nav-item" href="https://www.infobae.com/newsletters/">Newsletters</a>
+            </div>
+            <div class="tecno">
+                <a class="Link-Especial" href="https://www.infobae.com/tecno/">TECNO></a>
+                <h1>Apple alerta sobre ataques espía en iPhones de 92 países</h1>
+            </div>
+            <section class="container">
                 <article>
                     <p>Ante el aumento de amenazas cibernéticas, la gigante tecnológica recomienda a sus usuarios actualizar sus dispositivos con el último software para proteger sus iPhone</p>
                     <img src="../Imagenes/66KHCOEQU74GZRA3BR6BF5DUF4.avif" alt="aca hay una foto">
-                    <h6>Apple advierte a usuarios de iPhone sobre riesgos de espionaje en 92 países. REUTERS/Mike Segar/</h6>
-                    <h6>    </h6>
+                    <h4>Apple advierte a usuarios de iPhone sobre riesgos de espionaje en 92 países. REUTERS/Mike Segar/</h4>
                     <p>En una advertencia reciente dirigida a los usuarios de iPhone en 92 países, Apple ha alertado sobre ataques de “espionaje mercenario” que buscan comprometer remotamente los dispositivos vinculados a sus ID de Apple. Estos incidentes subrayan el creciente riesgo de software espía altamente invasivo dirigido específicamente a periodistas, disidentes, trabajadores gubernamentales y empresas en sectores sensibles. Apple recomienda enfáticamente tomar estas alertas en serio y sugiere actualizar el software iOS a su última versión, iOS 17.4.1, para protegerse contra posibles vulnerabilidades.</p>
-                </article>
-            </section>
-
-            <section>
-                <article>
                     <p>Estos ataques utilizan técnicas de infiltración avanzadas, como el ataque de cero clics, que no requieren la interacción del usuario para instalar malware en el dispositivo, según reportó Techcrunch. Este tipo de software espía puede otorgar a los atacantes un acceso ilimitado al dispositivo, permitiéndoles monitorear llamadas, correos electrónicos y aplicaciones de mensajería.</p>
-                    
                     <p>En respuesta a estas amenazas, además de emitir notificaciones de alerta, Apple ha introducido el “Modo de Protección” (Lockdown Mode), diseñado para minimizar el riesgo reduciendo la funcionalidad del iPhone para aquellos que podrían ser blancos de estos ataques.</p>
-                    
+                        
                 </article>
-
             </section>
 
-
-            <section>
+            <section class="container">
                 
                 <article>
 
@@ -69,7 +91,7 @@
                     </p>
                 </article>
             </section>
-            <section>
+            <section class="container">
                 <article>
                     <img src="../Imagenes/apple03.avif" alt="aca hay una foto de iphone en modo de proteccion">
                 <h6>Apple introduce "Modo de Protección" para usuarios amenazados por espías digitales. (Apple)</h6>
@@ -97,7 +119,7 @@
             </section>
 
                 
-            <section>
+            <section class="container">
                 <article>
                     <p>
                         Los ataques de cero clics son una forma avanzada de ciberataque que no requiere ninguna interacción por parte del usuario objetivo para ser exitosos.
@@ -126,7 +148,7 @@
                 </article>
             </section>
             
-            <section>
+            <section class="container">
                 <h3>Protección contra ataques de cero clics:</h3>
                 <article>
                     <li>
@@ -144,7 +166,7 @@
             </section>
 
             
-            <section>
+            <section class="container">
                 <article>
                     <h3>Consejos generales para protegerse de ataques cibernéticos</h3>
                     <img src="../Imagenes/apple04.avif" alt="aca hay una foto de consejo">
@@ -157,7 +179,7 @@
                 </article>
             </section>
 
-            <section>
+            <section class="container">
                 <article>
                     <h3>Cómo Apple notifica a los usuarios sobre ataques de espionaje mercenario:</h3>
                 <li>
@@ -222,7 +244,16 @@
                 </article>
                 
             </section>
-            <aside></aside>
+            <aside>
+                <aside>
+                    <h3>Recursos adicionales:</h3>
+                    <ul>
+                        <li><a href="https://www.apple.com/support/security/">Apple Security Updates</a></li>
+                        <li><a href="https://www.consumerreports.org/cybersecurity/">Consumer Reports Security Planner</a></li>
+                        <li><a href="https://www.accessnow.org/help/">Access Now Digital Security Helpline</a></li>
+                    </ul>
+                </aside>
+            </aside>
         </main>
 
         <footer>
