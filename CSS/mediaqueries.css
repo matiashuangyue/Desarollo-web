@@ -1,0 +1,51 @@
+ul,li{
+    display: inline;
+    list-style: none;
+    padding: 30px;
+}
+a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: rgb(0, 0, 0);
+}
+header{
+    background-color: rgb(204, 71, 71);
+    width: 100%;
+    height: 90px;
+    
+}
+
+img{
+    display: none;
+}
+
+
+@media (orientation: landscape)/* si la pantalla esta en modo horizontal */{
+    ul{
+        background-color: rgb(35, 21, 21);
+        width: 100%;
+    }   
+}
+
+@media (orientation: portrait)/* si la pantalla esta en modo vertical */{
+    ul{
+        background-color: rgb(123, 11, 11);
+        width: 100%;
+    }   
+}
+
+@media screen and (max-width: 600px)/* si la pantalla es menor a 600px */{
+    ul{
+        display: none   ;
+    }  
+    img{
+        display: block;
+    }
+
+}
+@media screen ,(max-width: 640px)/* si la pantalla es menor a 600px */{
+    ul{
+        background-color: rgb(204, 71, 71);
+        width: 100%;
+    }   
+}/*  and y ,(seria un or) son diferente and deberia compir los dos requisitos , , solo uno de los dos */
