@@ -47,5 +47,11 @@ img{
     ul{
         background-color: rgb(204, 71, 71);
         width: 100%;
+    }
+    .listnav{
+        display: none;
+    }
+    .logo{
+        display: inline;
     }   
 }/*  and y ,(seria un or) son diferente and deberia compir los dos requisitos , , solo uno de los dos */
