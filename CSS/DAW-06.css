@@ -1,0 +1,32 @@
+.container{
+    background-color:rgb(151, 151, 151);
+    height: 500px;
+    display: flex;
+    flex-direction: row;/*row-reverse, column, column-reverse*/
+    justify-content: flex-start;
+    /*flex-wrap: wrap;/*wrap-reverse*/
+    /*justify-content: flex-start;va de acuerdo a la dirección de la fila de derecha a izquierda*/
+    /*flex-wrap: wrap-reverse; se utiliza para que los elementos se acomoden de abajo hacia arriba*/
+    
+    /*align-items: stretch;para qiue los elementos se estiren*/
+    /*align-content: center;/*para que los elementos se centren  */
+    /*align-items: center;para que los elementos se centren*/
+    /*column-gap: 100px; para que los elementos se separen de eje principal*/
+    /*row-gap: 20px; para que los elementos se separen de eje cruzado*/
+}
+    
+.child {
+    background-color:rgb(247, 243, 243);
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+    /*height: 30px;*/
+    
+
+}
+
+.first{
+    align-self: stretch;
+}
+
