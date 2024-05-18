@@ -9,18 +9,62 @@
 
 </head>
 <body>
-    <header class="hd"  >
-    
-        <div class="NavBar">
-            <div class="logo">
-                <img src="../Imagenes/menu.png" alt="toca aca para volver" width="100" class="hamburger">
-            </div>
-            <div class="fecha">
-                <span class="dateInfo" id="current-date">15 may 2023</span>
-            </div>
+    <header>
+        <div class="hamburger">☰</div>
+        <div class="logo">
+            <img src="../Imagenes/logo_infobae_naranja.svg " width="100">
         </div>
-    
+        <nav class="nav-menu">
+            <ul>
+                <li class="date"><a href="#"><span>17 de mayo de 2024</span></a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Entretenimiento</a></li>
+                <li><a href="#">Politica</a></li>
+            </ul>
+        </nav>
+        <div class="btnmenu">
+            <a href="#"><button>Registrarme</button>
+                <a href="#"><button>Iniciar Sesión</button>
+        </div>
+        
     </header>
-
+    <main>
+        <section class="main-news">
+            <article>
+                <img src="../Imagenes/Pullardo.jpg" alt="Noticia Principal">
+                <h2>"No es pacto ni es de Mayo: es un contrato de adhesión"</h2>
+                <p>Breve descripción de la noticia principal que cubre los aspectos más importantes...</p>
+                <a href="#">Leer más</a>
+            </article>
+        </section>
+        <section class="secondary-news">
+            <article>
+                <img src="../Imagenes/Milei.jpg" alt="Noticia Secundaria 1">
+                <h3>Adelanto: NOTICIAS descubrió más plagios de Javier Milei en su nuevo libro</h3>
+                <a href="#">Leer más</a>
+            </article>
+            <article>
+                <img src="../Imagenes/Afip.jpg" alt="Noticia Secundaria 2">
+                <h3>La titular de AFIP designó como nuevo Director General de Aduanas a Eduardo Mallea</h3>
+                <a href="#">Leer más</a>
+            </article>
+            <!-- Más artículos secundarios según sea necesario -->
+        </section>
+    </main>
+    <aside class="ads">
+        <div class="ad">Publicidad 1</div>
+        <div class="ad">Publicidad 2</div>
+    </aside>
+    <footer>
+        <p>&copy; 2024 Diario Ejemplo. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Script para el menú hamburguesa
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-menu ul').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

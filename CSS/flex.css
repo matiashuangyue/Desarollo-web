@@ -6,3 +6,153 @@
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.btnmenu{
+    display: flex;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #b4b4b4;
+    color: #000000;
+    padding: 10px;
+}
+header .logo h1 {
+    margin: 0;
+}
+
+header .date {
+    font-size: 0.8em;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav-menu ul.show {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: block;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-news, .secondary-news {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px 0;
+}
+
+.main-news article {
+    text-align: center;
+}
+
+.secondary-news {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary-news article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.ads {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #f4f4f4;
+    margin: 20px 0;
+}
+
+.ads .ad {
+    background: #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .secondary-news {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .secondary-news article {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .secondary-news article {
+        width: 30%;
+    }
+
+    .ads .ad {
+        width: 30%;
+    }
+}
