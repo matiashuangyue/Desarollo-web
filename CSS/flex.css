@@ -12,6 +12,12 @@
     
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}	
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,7 +25,7 @@ body {
 }
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: space-between;
     align-items: center;
     background: #b4b4b4;
     color: #000000;
@@ -34,7 +40,8 @@ header .date {
 }
 .nav-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     max-width: 1200px;
 }
